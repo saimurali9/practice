@@ -1,0 +1,27 @@
+{% extends 'navbar.html' %}
+{% block contant %}
+<div class="header">
+    <div class="search-filter">
+        <input type="text" placeholder="Search sports...">
+        <select>
+            <option value="all">All Sports</option>
+            <option value="cricket">Cricket</option>
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+        </select>
+    </div>
+    <div class="main-content">
+        <h2>Sports</h2>
+        <div class="tvshow-grid">
+            {% for i in sports %}
+            <div class="tvshow">
+                <img src='{{i.image.url}}'>
+                <p>{{i.title}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+
+

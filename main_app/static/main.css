@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+.header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+.header h1 {
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+.search-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+.search-filter input {
+    padding: 10px;
+    margin-right: 10px;
+}
+.search-filter select {
+    padding: 10px;
+}
+.main-content {
+    padding: 20px;
+}
+.main-content h2 {
+    margin-top: 0;
+}
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tvshow-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.movie {
+    background-color: #282828;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+}
+.movie img {
+    width: 355px;
+    height: 205px;
+}
+.movie p {
+    padding: 10px;
+}
+.tvshow {
+    background-color: #282828;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+}
+.tvshow img {
+    
+    width: 355px;
+    height: 205px;
+}
+
+.tvshow p {
+    padding: 10px;
+}
+.footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+.logout-button {
+    background-color: #040101; /* Button color */
+    border: none; /* Remove default border */
+    color: rgb(255, 0, 0); /* Text color */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block for better styling control */
+    font-size: 16px; /* Font size */
+    margin: 5px 2px; /* Space around button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    right: 0;
+    bottom: 91%;
+}
+
+.logout-button:hover {
+background-color: #f8f8f8; /* Darker shade on hover */
+}
+.main-content {
+padding: 20px;
+}
+.main-content h2 {
+    margin-top: 0;
+}
+.content-section {
+    margin-bottom: 40px;
+}
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.content-item {
+    background-color: #282828;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+}
+.content-item img {
+    width: 100%;
+}
+.content-item p {
+    padding: 10px;
+}
+
+.search-filter button {
+    padding: 10px;
+    margin-right: 10px;
+}
+

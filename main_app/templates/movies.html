@@ -1,0 +1,27 @@
+    {% extends "navbar.html" %}
+    {% block contant %}
+     <div class="header">
+    <div class="search-filter">
+        <input type="text" placeholder="Search movies...">
+        <select>
+            <option value="all">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+        </select>
+    </div>
+        <div class="main-content">
+        <h2>Movies</h2>
+        <div class="movie-grid">
+            {% for i in movie %}
+            <div class="movie">
+                <img src="{{i.image.url}}">
+                <p>{{i.title}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+   
+

@@ -1,0 +1,20 @@
+
+   {% extends "navbar.html"%}
+   {% block contant %}
+   <div class="header">
+    <div class="main-content">
+        <div class="movie-grid">
+            {% for i in show %}
+            <div class="movie">
+                <img src="{{i.image.url}}">
+                {% if i.title == "ELITE" %}
+                <a href="https://www.netflix.com/watch/80201009?trackId=268410292&tctx=0%2C0%2Cb236e778-2bbb-4535-9be2-9631a3442d0b-211178342%2Cb236e778-2bbb-4535-9be2-9631a3442d0b-211178342%7C2%2Cunknown%2C%2C%2CtitlesResults%2C80200942%2CVideo%3A80201009%2CdetailsPageEpisodePlayButton"><p>{{i.title}}</p></a>
+                {% else %}
+                <p>{{i.title}}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+

@@ -1,0 +1,26 @@
+    {% extends 'navbar.html'%}
+    {% block contant %}
+    <div class="header">
+    <div class="search-filter">
+        <input type="text" placeholder="Search TV shows...">
+        <select>
+            <option value="all">All Genres</option>
+            <option value="drama">Drama</option>
+            <option value="comedy">Comedy</option>
+            <option value="thriller">Thriller</option>
+            <option value="reality">Reality</option>
+        </select>
+    </div>
+    <div class="main-content">
+        <h2>TV SHOWS</h2>
+        <div class="tvshow-grid">
+            {% for i in show %}
+            <div class="tvshow">
+                <img src="{{i.image.url}}">
+                <p>{{i.title}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+    

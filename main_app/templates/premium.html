@@ -1,0 +1,25 @@
+{% extends "navbar.html"%}
+{% block contant %}
+<form action="" method="post">
+    {% csrf_token %}
+<div class="search-filter">
+    <input type="text" placeholder="Search ..." name="search">
+    <button type="submit"> SEARCH </button>
+    </div>
+    <div class="main-content">
+        <div class="content-section">
+            <h2>Exclusive Movies</h2>
+            <div class="content-grid">
+        
+                <div class="content-item">
+                   <a href="{{data.Plot}}"  ><img src='{{data.Poster}}' > </a>
+                    <p>{{data.Title}}</p>
+                    <p>{{data.Released}}</p>
+                    <p>{{data.Plot}}</p>
+                </div>
+                
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
